@@ -1,0 +1,24 @@
+@import "abstracts/variables";
+
+.sidenav {
+  background-color: $layout-sidenav-bg-color;
+  height: $layout-sidenav-height;
+  top: $layout-sidenav-top;
+  width: $layout-sidenav-width;
+  transition: left 0.3s ease;
+
+  @apply fixed left-0;
+  @apply text-white;
+
+  &--side {
+    @apply z-10;
+  }
+
+  &--over {
+    @apply z-20;
+  }
+
+  &--hidden {
+    left: $layout-sidenav-hidden-left;
+  }
+}

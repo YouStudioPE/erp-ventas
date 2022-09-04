@@ -8,3 +8,9 @@ $layout-header-logo-width: theme("width.12");
 
 $layout-header-avatar-height: theme("height.12");
 $layout-header-avatar-width: theme("width.12");
+
+$layout-sidenav-top: $layout-header-height;
+$layout-sidenav-width: theme("width.64");
+$layout-sidenav-hidden-left: calc(0px - $layout-sidenav-width);
+$layout-sidenav-height: calc(100vh - $layout-header-height);
+$layout-sidenav-bg-color: #343a40;

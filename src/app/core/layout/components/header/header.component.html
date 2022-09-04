@@ -1,5 +1,9 @@
 <header class="header">
-  <button class="sidenav-button" *ngIf="!layoutSize.isDesktop">
+  <button
+    class="sidenav-button"
+    *ngIf="!layoutSize.isDesktop"
+    (click)="handleSidenavButtonClick()"
+  >
     <fa-icon [icon]="['fas', 'bars']" size="lg"></fa-icon>
   </button>
 
