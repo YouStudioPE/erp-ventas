@@ -1,11 +1,22 @@
 import { NgModule } from '@angular/core';
-import { LayoutModule } from './layout';
+import { SharedModule } from '@shared/index';
+import {
+  ContentComponent,
+  HeaderComponent,
+  LayoutComponent,
+  SidenavComponent,
+} from './components';
 import { ScreenSizeService } from './services';
 
 @NgModule({
-  declarations: [],
-  imports: [],
-  exports: [LayoutModule],
+  declarations: [
+    HeaderComponent,
+    SidenavComponent,
+    ContentComponent,
+    LayoutComponent,
+  ],
+  imports: [SharedModule],
+  exports: [LayoutComponent],
   providers: [ScreenSizeService],
 })
 export class CoreModule {}

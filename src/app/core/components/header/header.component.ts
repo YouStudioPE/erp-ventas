@@ -55,7 +55,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     );
   }
 
-  handleSidenavButtonClick() {
+  handleSidenavButtonClick(): void {
     this.onSidenavButtonClick.emit();
   }
 }

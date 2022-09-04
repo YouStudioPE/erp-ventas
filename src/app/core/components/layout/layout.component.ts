@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ScreenSize } from '@core/constants';
 import { ScreenSizeService } from '@core/services';
-import { LayoutSize } from '@core/types';
 import { Subscription } from 'rxjs';
 
 @Component({
