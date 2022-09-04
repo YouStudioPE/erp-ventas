@@ -1,0 +1,71 @@
+@import "abstracts/variables";
+
+.header {
+  @apply fixed flex items-center justify-center top-0 left-0 w-full;
+  @apply bg-white shadow-lg;
+  @apply wrapper;
+
+  @apply desktop:justify-between;
+  height: $layout-header-height;
+}
+
+.sidenav-button {
+  @apply absolute left-4;
+  @apply desktop:static;
+
+  height: $icon-button-height;
+  width: $icon-button-width;
+}
+
+.logo {
+  @apply flex items-center gap-x-2;
+
+  #{&}__image {
+    height: $layout-header-logo-height;
+    width: $layout-header-logo-width;
+  }
+
+  #{&}__name {
+    @apply text-lg;
+  }
+}
+
+.menu {
+  @apply absolute right-4 flex gap-x-1;
+  @apply desktop:static;
+
+  #{&}__item {
+    @apply flex items-center justify-center;
+    @apply cursor-pointer;
+
+    height: $icon-button-height;
+
+    &:not(.menu__item--user) {
+      width: $icon-button-width;
+    }
+  }
+}
+
+.user {
+  @apply flex items-center gap-x-2;
+
+  #{&}__info {
+    @apply text-right;
+  }
+
+  #{&}__avatar {
+    @apply rounded-full;
+    height: $layout-header-avatar-height;
+    width: $layout-header-avatar-width;
+  }
+
+  &-info {
+    &__name {
+      @apply text-base font-semibold;
+    }
+
+    &__role {
+      @apply text-xs italic;
+    }
+  }
+}

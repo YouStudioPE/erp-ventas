@@ -1,0 +1,28 @@
+<header class="header">
+  <button class="sidenav-button" *ngIf="!layoutSize.isDesktop">
+    <fa-icon [icon]="['fas', 'bars']" size="lg"></fa-icon>
+  </button>
+
+  <div class="logo">
+    <img src="assets/logo.svg" alt="YouStudio" class="logo__image" />
+    <span class="logo__name">YouStudio</span>
+  </div>
+
+  <ul class="menu">
+    <li class="menu__item">
+      <a><fa-icon [icon]="['fas', 'expand']" size="lg"></fa-icon></a>
+    </li>
+    <li class="menu__item">
+      <a><fa-icon [icon]="['fas', 'bell']" size="lg"></fa-icon></a>
+    </li>
+    <li class="menu__item menu__item--user">
+      <a class="user">
+        <div class="user__info" *ngIf="layoutSize.isDesktop">
+          <div class="user-info__name">Admin</div>
+          <div class="user-info__role">Administrador</div>
+        </div>
+        <img src="assets/avatar.png" alt="Admin" class="user__avatar" />
+      </a>
+    </li>
+  </ul>
+</header>
