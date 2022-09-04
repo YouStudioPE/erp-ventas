@@ -2,10 +2,8 @@ $icon-button-height: theme("height.12");
 $icon-button-width: theme("width.12");
 
 $layout-header-height: theme("height.16");
-
 $layout-header-logo-height: theme("height.12");
 $layout-header-logo-width: theme("width.12");
-
 $layout-header-avatar-height: theme("height.12");
 $layout-header-avatar-width: theme("width.12");
 
@@ -14,3 +12,8 @@ $layout-sidenav-width: theme("width.64");
 $layout-sidenav-hidden-left: calc(0px - $layout-sidenav-width);
 $layout-sidenav-height: calc(100vh - $layout-header-height);
 $layout-sidenav-bg-color: #343a40;
+
+$layout-content-margin-top: $layout-header-height;
+$layout-content-height: calc(100vh - $layout-header-height);
+$layout-content-bg-color: #e8f0f7;
+

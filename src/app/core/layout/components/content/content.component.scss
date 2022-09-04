@@ -1,0 +1,17 @@
+@import "abstracts/variables";
+
+.content {
+  @apply p-8 ml-0;
+
+  background-color: $layout-content-bg-color;
+  height: $layout-content-height;
+  margin-top: $layout-content-margin-top;
+
+  transition: margin-left 0.3s ease;
+}
+
+@screen desktop {
+  .content {
+    margin-left: $layout-sidenav-width;
+  }
+}
