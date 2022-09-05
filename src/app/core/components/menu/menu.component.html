@@ -1,0 +1,16 @@
+<ul class="menu">
+  <li class="menu__item" *ngFor="let item of items">
+    <a
+      class="menu__link"
+      [routerLink]="item.routelink"
+      routerLinkActive="menu__link--active"
+    >
+      <fa-icon
+        *ngIf="item.icon"
+        [icon]="item.icon"
+        class="menu-item__icon"
+      ></fa-icon>
+      <span class="menu-item__label">{{ item.label }}</span>
+    </a>
+  </li>
+</ul>

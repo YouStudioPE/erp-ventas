@@ -4,19 +4,21 @@ import {
   ContentComponent,
   HeaderComponent,
   LayoutComponent,
+  MenuComponent,
   SidenavComponent,
 } from './components';
-import { ScreenSizeService } from './services';
+import { MenuService, ScreenSizeService } from './services';
 
 @NgModule({
   declarations: [
-    HeaderComponent,
-    SidenavComponent,
     ContentComponent,
+    HeaderComponent,
     LayoutComponent,
+    MenuComponent,
+    SidenavComponent,
   ],
   imports: [SharedModule],
   exports: [LayoutComponent],
-  providers: [ScreenSizeService],
+  providers: [MenuService, ScreenSizeService],
 })
 export class CoreModule {}

@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MenuService } from '@core/services';
+import { MenuItems } from '@core/types';
 
 @Component({
   selector: 'ys-sidenav',
@@ -12,10 +14,19 @@ export class SidenavComponent implements OnInit {
   @Input()
   mode: 'side' | 'over';
 
-  constructor() {
+  menuItems: MenuItems;
+
+  constructor(private readonly menuService: MenuService) {
     this.opened = true;
     this.mode = 'side';
+    this.menuItems = [];
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getMenuItems();
+  }
+
+  private getMenuItems(): void {
+    this.menuItems = this.menuService.getItems();
+  }
 }

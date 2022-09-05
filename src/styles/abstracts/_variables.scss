@@ -11,9 +11,14 @@ $layout-sidenav-top: $layout-header-height;
 $layout-sidenav-width: theme("width.64");
 $layout-sidenav-hidden-left: calc(0px - $layout-sidenav-width);
 $layout-sidenav-height: calc(100vh - $layout-header-height);
-$layout-sidenav-bg-color: #343a40;
+$layout-sidenav-bg-color: theme("colors.gray.darkest");
 
 $layout-content-margin-top: $layout-header-height;
 $layout-content-height: calc(100vh - $layout-header-height);
-$layout-content-bg-color: #e8f0f7;
+$layout-content-bg-color: theme("colors.gray.light");
 
+$menu-item-height: theme("height.12");
+$menu-item-bg-color: theme("colors.gray.darkest");
+$menu-item-bg-color-active: theme("colors.gray.dark");
+$menu-item-bg-color-hover: theme("colors.gray.default");
+$menu-item-text-color: theme("colors.white.light");

@@ -2,7 +2,7 @@
 
 .header {
   @apply fixed flex items-center justify-center top-0 left-0 w-full;
-  @apply bg-white shadow-lg;
+  @apply bg-white-default shadow-lg;
   @apply wrapper;
 
   @apply desktop:justify-between;
